@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method="post" enctype="multipart/form-data">
+    <input type="number" name="a" placeholder="Number 1">
+    <label for="choice">Choose operation</label>
+  <select id="choice" name="operation">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+  </select>
+    <input type="number" name="b" placeholder="Number 2">
+    <input type="submit" value="Send">
+</form>
+{% endblock %}
